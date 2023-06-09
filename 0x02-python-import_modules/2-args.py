@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-import sys
 if __name__ == "__main__":
-    num = len(sys.argv) - 1
-    period = ':'
-    suffix = 's'
+    import sys
 
-    if num == 0:
-        period = ''
-    if num == 1:
+    n = len(sys.argv) - 1
+    suffix = 's'
+    separator = ':'
+
+    if n == 0:
+        separator = '.'
+
+    if n == 1:
         suffix = ''
-    print("{} argument{}{}".format(num, suffix, period))
-    for i in range(1, num +1):
+
+    print("{} argument{}{}".format(n, suffix, separator))
+    for i in range(1, n + 1):
         print("{}: {}".format(i, sys.argv[i]))
