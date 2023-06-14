@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def multiply_by_2(a_dictionary):
-    b_dict = a_dictionary.copy()
-    for v in b_dict.keys():
-        b_dict[v] = b_dict[v] * 2
-    return (b_dict)
+def simple_delete(a_dictionary, key=""):
+    if key in a_dictionary:
+        del a_dictionary[key]
+
+    return a_dictionary
