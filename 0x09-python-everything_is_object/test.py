@@ -1,6 +1,8 @@
-def increment(n):
-    n.append(4)
-    print(n)
-l = [1, 2, 3]
-increment(l)
-print(l)
+def assign_value(n, v):
+    n = v
+    return n
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1)
