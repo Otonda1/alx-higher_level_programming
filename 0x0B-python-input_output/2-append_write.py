@@ -6,7 +6,7 @@ of atext file
 
 def append_write(filename="", text=""):
     """
-    this function returns the number of chararcters added
+    returns the number of chararcters added
     """
     with open(filename, mode = 'a', encoding = 'utf-8') as f:
         return f.write(text)
