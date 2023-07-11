@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 """
-This module defines a function that reads a textfile
-and prints it out to the std output
+Module that prints a file's contents to
+stdout
 """
 
 
 def read_file(filename=""):
-    """
-    This function reads a file and prints it out to the std out
-    """
-    with open(filename, encoding = 'utf-8') as f:
-        fread = f.read()
-        print(fread, end='')
+    """Open the file and read from it"""
+    with open(filename, encoding="utf-8") as f:
+        print(f.read(), end='')
