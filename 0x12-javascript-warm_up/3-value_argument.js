@@ -1,7 +1,11 @@
 #!/usr/bin/node
-const myVar = process.argv.slice(2);
-if (myVar[0] === undefined) {
-	  console.log('No argument');
+// a script that prints the first argument passed to it
+
+const process = require('process');
+const argv = process.argv;
+
+if (argv[2] === undefined) {
+  console.log('No argument');
 } else {
-	  console.log(myVar[0]);
+  console.log(argv[2]);
 }
