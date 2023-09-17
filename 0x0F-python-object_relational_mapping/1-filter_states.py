@@ -20,7 +20,5 @@ if __name__ == "__main__":
                 print(row)
     except MySQLdb.Error as e:
         print(f"errors {e} occured")
-
-
     cur.close()
     db.close()
