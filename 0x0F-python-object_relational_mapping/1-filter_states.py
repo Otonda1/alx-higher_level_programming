@@ -12,10 +12,11 @@ try:
     db = MySQLdb.connect(host=host, user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name='Nevada' OR  name='New York'")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if row[1][0] == 'N':
+            print(row)
 except MySQLdb.Error as e:
     print(f"errors {e} occured")
 
