@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
      Python script that takes in a URL and an email
-     sends a POST request to the passed 
+     sends a POST request to the passed
 """
 
 import urllib.request
